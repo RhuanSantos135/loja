@@ -1,5 +1,12 @@
-a = 2 
-b = 3 
+from fastapi import FastAPI
 
 
-print(a + b)
+
+
+app =  FastAPI()
+
+
+@app.get("/teste")
+def teste():
+    return{"hello" : "word"}
+
